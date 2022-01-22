@@ -1,0 +1,45 @@
+body /* Body tagının tamamını etkiler */
+{
+    margin: 0;
+    padding: 0;
+}
+.main /* Class değeri "main" olanları etkiler */
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%)
+}
+.bg /* Class değeri "bg" olanları etkiler */
+{
+    background: linear-gradient(to right, red, blue);
+    height: 100%;
+}
+.buton /* Class değeri "buton" olanları etkiler */
+{
+    width: 50;
+    height: 50;
+    font-size: 25;
+    margin: 2;
+    background: #608d8b  ;  
+    border: none;
+    color: white;
+}
+.buton:hover
+{
+    background:  #408080
+}
+.buton:active
+{
+    background: #224444
+}
+
+#textview /* id değeri "textview" olanları etkiler */
+{
+    width: 226;
+    margin: 5;
+    font-size: 25;
+    padding: 5;
+    border: none;
+    color: #608d8b ;
+}

@@ -1,0 +1,49 @@
+﻿<html>
+    <head>
+        <script src="kod.js"></script><!--  JavaScript kodları kod.js dosyasında    -->
+        <link rel="stylesheet" href="stil.css" /><!--   CSS düzenlemeleri stil.css dosyasında  -->
+        <meta charset="UTF-8">
+    </head>
+    <!--    CSS için class kullanıldı.  -->
+    <body class="bg">
+        <div class="main">
+            <form name="form">
+            <!--    inputu değişkene atarken sorun çıktığı için class yerine id kullanıldı. -->
+                <input id="textview" name="textview" onkeydown="if (event.keyCode == 13){ ayirma();}"><br>
+                <table>
+            <!--    onClick değeri butona tıkladığında çalışacak fonksiyonu belirtiyor. -->
+                    <tr>
+                        <td><input type="button" class="buton" value="C" onclick="clean()"></td>
+                        <td><input type="button" class="buton"  value="<" onclick="back()"></td>
+                        <td><input type="button" class="buton"  value="/" onclick="insert('/')"></td>
+                        <td><input type="button" class="buton"  value="*" onclick="insert('*')"></td>
+                    </tr>
+                    <tr>
+                    <!--    Örneğin(insert(7) insert fonksiyonuna "7" değerini gönderiyor)  -->
+                        <td><input type="button" class="buton"  value="7" onclick="insert(7)"></td>
+                        <td><input type="button" class="buton"  value="8" onclick="insert(8)"></td>
+                        <td><input type="button" class="buton"  value="9" onclick="insert(9)"></td>
+                        <td><input type="button" class="buton"  value="-" onclick="insert('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="buton"  value="4" onclick="insert(4)"></td>
+                        <td><input type="button" class="buton"  value="5" onclick="insert(5)"></td>
+                        <td><input type="button" class="buton"  value="6" onclick="insert(6)"></td>
+                        <td><input type="button" class="buton"  value="+" onclick="insert('+')"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="buton"  value="1" onclick="insert(1)"></td>
+                        <td><input type="button" class="buton"  value="2" onclick="insert(2)"></td>
+                        <td><input type="button" class="buton"  value="3" onclick="insert(3)"></td>
+                        <td rowspan="5"><input type="button" style="height: 110;" class="buton"  value="=" onclick="ayirma()"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" class="buton" style='width:110' value="0" onclick="insert(0)"></td>
+                        <td><input type="button" class="buton"  value="." onclick="insert('.')"></td>
+                    </tr>                  
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
